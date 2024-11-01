@@ -1,0 +1,1 @@
+// Declacao de funcao
