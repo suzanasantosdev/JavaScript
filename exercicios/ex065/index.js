@@ -17,3 +17,9 @@ const pessoas = [
     { nome: 'Rosana', idade: 32 },
     { nome: 'Wallace', idade: 47 },
 ];
+const pessoasComNomeGrande = pessoas.filter(obj => obj.nome.length >= 5);
+const pessoasComMaisDeCinquentaAnos = pessoas.filter(obj => obj.idade > 50);
+const nomeTerminaComA = pessoas.filter(obj => {
+    return obj.nome.toLowerCase().endsWith('a');
+});
+console.log(nomeTerminaComA);
