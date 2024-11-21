@@ -5,11 +5,18 @@
 // console.log(pessoa.nome);
 // console.log(pessoa.sobrenome);
 
-const pessoa1 = new Object();
-pessoa1.nome = 'Suzana';
-pessoa1.sobrenome = 'Santos';
-pessoa1. falarNome = function() {
-    console.log(`${this.nome} esta falando seu nome.`);
+
+
+// Factory functions / Constructor functions / Classes
+function Pessoa(nome, sobrenome) {
+    this.nome = nome;
+    this.sobrenome = sobrenome;
+
+    Object.freeze(this);
 }
 
-pessoa1.falarNome();
+    const p1 = new Pessoa('David', 'Monteiro');
+    const p2 = new Pessoa('Suzana', 'Santos');
+    
+    console.log(p1);
+    console.log(p2);
